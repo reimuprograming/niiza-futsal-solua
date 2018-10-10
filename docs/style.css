@@ -65,7 +65,7 @@ article header::before {
 
 h1 {
     font-size: 2rem;
-    color: white;
+    color: rgb(231, 25, 25);
     text-align: center;
     z-index: 999;
 }
@@ -162,4 +162,12 @@ footer a {
         width: 30%;
         padding: 0 1em;
     }
+
+
+}
+
+span{color:rgb(255, 51, 0);
+    font-size: 20px;
+
+
 }
