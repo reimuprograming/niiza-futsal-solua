@@ -84,6 +84,38 @@ h3 {
     border-left: 5px solid var(--dark-main-color);
 }
 
+h4 {
+    position: relative;
+    padding-left: 2em;
+}
+
+h4::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f1e3";
+    position: absolute;
+    font-size: 1em;
+    left: 0;
+    bottom: 0;
+    color: #000;
+}
+
+/*** animation ***/
+
+h4::before {
+    animation: rotate 1s linear 0s alternate infinite;
+}
+
+/*** keyframes ***/
+
+@keyframes rotate {
+    from {
+        transform: rotate(-90deg) translate(0);
+    }
+    to {
+        transform: rotate(0deg) translate(100%);
+    }
+}
+
 p {
     color: var(--base-color);
 }
@@ -130,9 +162,12 @@ footer a {
         width: 30%;
         padding: 0 1em;
     }
+
+
 }
 
 span{color:rgb(255, 51, 0);
     font-size: 20px;
+
 
 }
