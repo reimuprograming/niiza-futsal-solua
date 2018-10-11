@@ -162,14 +162,11 @@ footer a {
         width: 30%;
         padding: 0 1em;
     }
-
-
 }
 
-.league{color:rgb(255, 51, 0);
+.league {
+    color: rgb(255, 51, 0);
     font-size: 20px;
-
-
 }
 
 page-top {
@@ -178,6 +175,7 @@ page-top {
     right: 20px;
     font-size: 77%;
 }
+
 #page-top a {
     background: #666;
     text-decoration: none;
@@ -188,7 +186,8 @@ page-top {
     display: block;
     border-radius: 5px;
 }
+
 #page-top a:hover {
     text-decoration: none;
-    background:  hsla(180, 100%, 40%, 1);
+    background: hsla(180, 100%, 40%, 1);
 }
