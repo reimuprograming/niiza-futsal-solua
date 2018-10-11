@@ -65,7 +65,7 @@ article header::before {
 
 h1 {
     font-size: 2rem;
-    color: rgb(231, 25, 25);
+    color: rgb(25, 231, 128);
     text-align: center;
     z-index: 999;
 }
@@ -166,8 +166,29 @@ footer a {
 
 }
 
-span{color:rgb(255, 51, 0);
+.league{color:rgb(255, 51, 0);
     font-size: 20px;
 
 
+}
+
+page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+}
+#page-top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background:  hsla(180, 100%, 40%, 1);
 }
