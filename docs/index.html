@@ -5,42 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- こいつないとfont-awesome使えないから消さないで -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>新座フットサルSOLUA</title>
-    <p id="up"></p>
 </head>
 
 <body>
     <header class="navbar">
         <nav>
-            <ul>
-                <li>
-                    <a href="#team" class="team">チームSOLUAの紹介</a>
-                </li>
-                <li>
-                    <a href="#activity" class="activity">活動について</a>
-                <li><a href="#dialy" class="dialy">活動記録</a></li>
-                </li>
-                <li><a href="#album" class="album">アルバム</a></li>
-                <li><a href="#guest" class="guest">ゲスト参加</a></li>
-                <li>
-                    <a href="#contact" class="contact">問い合わせ</a>
-                </li>
-                <li><a href="#sponsor" class="sponsor">スポンサー</a></li>
-                <li><a href="#access" class="access">アクセス</a></li>
-            </ul>
+            <h2>SOLUA</h2>
+            <input type="checkbox">
+            <i class="fas fa-bars fa-2x"></i>
+            <div class="menu-wrapper">
+                <ul>
+                    <li><a href="#team" class="team">チームSOLUAの紹介</a></li>
+                    <li><a href="#activity" class="activity">活動について</a></li>
+                    <li><a href="#dialy" class="dialy">活動記録</a></li>
+                    <li><a href="#album" class="album">アルバム</a></li>
+                    <li><a href="#guest" class="guest">ゲスト参加</a></li>
+                    <li><a href="#contact" class="contact">問い合わせ</a></li>
+                    <li><a href="#sponsor" class="sponsor">スポンサー</a></li>
+                    <li><a href="#access" class="access">アクセス</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <main>
         <article>
             <header>
                 <h1>SOLUAで一緒にフットサルやりませんか？</h1>
-
             </header>
 
-            <p></p>
-            <p></p>
             <section id="team">
                 <h2>チームSOLUAの紹介</h2>
                 <p>チームSOLUAは、経験者と初心者関係なくとにかく楽しく上を目指す！という方針で活動しています。</p>
@@ -52,7 +49,6 @@
                     <h3>メンバー構成</h3>
                     <p>現在、メンバーは１７人（女性２人）</p>
                     <p>メンバーの年齢は10代から40代、未経験から始めた人や女性もいます。</p>
-                    <p></p>
                 </section>
             </section>
             <section id="activity">
@@ -68,74 +64,91 @@
                 </section>
                 <section>
                     <h3>練習内容（例）</h3>
-                    <h4>アップ</h4>
-                    <ul>
-                        <li>ジョギング</li>
-                        <li>ストレッチ</li>
-                        <li>ラダー</li>
-                    </ul>
-                    <h4>練習</h4>
-                    <ul>
-                        <li>パス練習</li>
-                        <li>鳥かご</li>
-                        <li>シュート練習</li>
-                        <li>チームの戦術に合わせた練習</li>
-                    </ul>
-                    <h4>試合</h4>
-                    <p>その日集まったゲストと試合します。</p>
-
+                    <section>
+                        <h4>アップ</h4>
+                        <ul>
+                            <li>ジョギング</li>
+                            <li>ストレッチ</li>
+                            <li>ラダー</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>練習</h4>
+                        <ul>
+                            <li>パス練習</li>
+                            <li>鳥かご</li>
+                            <li>シュート練習</li>
+                            <li>チームの戦術に合わせた練習</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>試合</h4>
+                        <p>その日集まったゲストと試合します。</p>
+                    </section>
                 </section>
-                <section id="dialy">
-                    <h2>活動記録</h2>
-                </section>
-                <section id="album">
-                    <h2>アルバム</h2>
-                </section>
-                <section id="guest">
-                    <h2>ゲスト参加</h2>
-                    <p>初心者から経験者まで男女年齢問わず募集してます！参加費は500円です。参加したい方はお気軽にお問い合わせください。</p>
-                </section>
-
-                <section id="contact">
-                    <h2>問い合わせ</h2>
-
-                </section>
-                <section id="sponsor">
-                    <h2>スポンサー</h2>
-                    <ul>
-                        <li><a href="http://cameojapan.co.jp/">CAMEO JAPAN</a>（ウェアの支給）</li>
-                        <li>KENSIN（ボールの支給）</li>
-                    </ul>
-                </section>
-        </article>
-        <aside class="maps">
-            <h2>アクセス</h2>
-            <h4>新座総合体育館</h4>
-            <p>最寄り：新座駅</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.6015843891337!2d139.55100991499978!3d35.78516198017023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e85f323b0f87%3A0x7b49ec853bee6236!2z5paw5bqn5biC5rCR57eP5ZCI5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1539164615656"
-                width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <h4>所沢特別支援学校</h4>
-            <p>最寄り：航空公園駅</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25884.105273000056!2d139.49021469994221!3d35.81188338048103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5omA5rKi54m55Yil5pSv5o-05a2m5qCh!5e0!3m2!1sja!2sjp!4v1539164402143"
-                width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <h3>リンク</h3>
-            <ul>
-                <li>
-                    <a href="http://cameojapan.co.jp/">CAMEO JAPAN</a>
-                </li>
-
-            </ul>
             </section>
-            <a class="twitter-timeline" data-width="320" data-height="400" href="https://twitter.com/solua58377267?ref_src=twsrc%5Etfw">Tweets
-                by solua58377267</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <section id="dialy">
+                <h2>活動記録</h2>
+            </section>
+
+            <section id="album">
+                <h2>アルバム</h2>
+            </section>
+
+            <section id="guest">
+                <h2>ゲスト参加</h2>
+                <p>初心者から経験者まで男女年齢問わず募集してます！参加費は500円です。参加したい方はお気軽にお問い合わせください。</p>
+            </section>
+
+            <section id="contact">
+                <h2>問い合わせ</h2>
+
+            </section>
+            <section id="sponsor">
+                <h2>スポンサー</h2>
+                <ul>
+                    <li><a href="http://cameojapan.co.jp/">CAMEO JAPAN</a>（ウェアの支給）</li>
+                    <li>KENSIN（ボールの支給）</li>
+                </ul>
+            </section>
+        </article>
+        <aside class="sidebar">
+            <section>
+                <h2>アクセス</h2>
+                <section>
+                    <h3>新座総合体育館</h3>
+                    <p>最寄り：新座駅</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.6015843891337!2d139.55100991499978!3d35.78516198017023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e85f323b0f87%3A0x7b49ec853bee6236!2z5paw5bqn5biC5rCR57eP5ZCI5L2T6IKy6aSo!5e0!3m2!1sja!2sjp!4v1539164615656"
+                        width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+                <section>
+                    <h3>所沢特別支援学校</h3>
+                    <p>最寄り：航空公園駅</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d25884.105273000056!2d139.49021469994221!3d35.81188338048103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5omA5rKi54m55Yil5pSv5o-05a2m5qCh!5e0!3m2!1sja!2sjp!4v1539164402143"
+                        width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+            </section>
+
+            <section>
+                <h2>リンク</h2>
+                <ul>
+                    <li>
+                        <a href="http://cameojapan.co.jp/">CAMEO JAPAN</a>
+                    </li>
+
+                </ul>
+                <a class="twitter-timeline" data-width="320" data-height="400" href="https://twitter.com/solua58377267?ref_src=twsrc%5Etfw">Tweets
+                    by solua58377267</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
         </aside>
     </main>
-    <p id="page-top"><a href="#up">PAGE TOP</a></p>
-    <footer>
-        <p>Copyright@2018 フットサルSOLUA
 
-        </p>
+    <footer>
+        <!-- ページトップにリンクを飛ばすときは、href="#top"で良い -->
+        <a href="#top" class="page-top">PAGE TOP</a>
+        <p>Copyright@2018 フットサルSOLUA</p>
     </footer>
 
 </body>
