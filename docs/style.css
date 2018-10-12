@@ -15,15 +15,88 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
 }
 
-.navbar {
-    height: 50px;
+.navbar nav {
+    /* height: 50px; */
+    position: relative;
     background-color: var(--dark-main-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
 }
 
-.team {
+.navbar nav h2 {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar input {
+    position: absolute;
+    z-index: 999;
+    width: 38px;
+    height: 42px;
+    top: calc((82.19px - 42px) / 2);
+    right: 1rem;
+    margin: 0;
+    opacity: 0;
+}
+
+.navbar i {
+    border: 5px solid var(--light-main-color);
+    box-sizing: border-box;
+}
+
+.navbar input:hover+i, .toggle input:focus+i {
+    opacity: 0.5;
+}
+
+.menu-wrapper {
+    width: 100%;
+    display: none;
+}
+
+.navbar input:checked~.menu-wrapper {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+}
+
+/***************************************************************/
+
+/**********  注目　************/
+
+/* ↓同じコードは何回も書かないこと！！　ダサいしわかりずらい
+共通のcssなら、同じ名前のclass名をつけて、記述する
+例えば、menuとかつけて
+.menu{
+    hogehoge:hogehoge
+}
+のようにかく */
+
+/*******************************************************************/
+
+/* .team {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -139,7 +212,7 @@ body {
     -ms-transform: translateY(4px);
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
-    border-bottom: none .
+    border-bottom: none;
 }
 
 .access {
@@ -157,23 +230,7 @@ body {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: none
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-}
+} */
 
 main {
     padding: 2em;
@@ -256,13 +313,6 @@ p {
     color: var(--base-color);
 }
 
-code {
-    color: var(--accent-color);
-    background-color: #DDD;
-    border-radius: 0.25em;
-    padding: 0.2rem 0.4rem;
-}
-
 .sidebar ul {
     color: var(--dark-main-color);
 }
@@ -279,33 +329,20 @@ footer {
     align-items: center;
 }
 
-footer p {
+/* footer p {
     font-size: 0.8em;
-}
+} */
 
-footer a {
+/* footer a {
     color: var(--base-color);
-}
-
-@media(min-width:576px) {
-    main {
-        display: flex;
-    }
-    article {
-        width: 70%;
-    }
-    .sidebar {
-        width: 30%;
-        padding: 0 1em;
-    }
-}
+} */
 
 .league {
     color: rgb(255, 51, 0);
     font-size: 18px;
 }
 
-page-top {
+/* page-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -326,4 +363,38 @@ page-top {
 #page-top a:hover {
     text-decoration: none;
     background: hsla(180, 100%, 40%, 1);
+} */
+
+.page-top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    background-color: var(--light-main-color);
+    color: var(--base-color);
+    width: 100px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    border: 5px solid var(--dark-main-color);
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+.page-top:hover {
+    opacity: 1;
+}
+
+@media(min-width:576px) {
+    main {
+        display: flex;
+    }
+    article {
+        width: 70%;
+    }
+    .sidebar {
+        width: 30%;
+        padding: 0 1em;
+    }
 }
