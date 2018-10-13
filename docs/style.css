@@ -106,7 +106,7 @@ article header::before {
 
 h1 {
     font-size: 2rem;
-    color: rgb(25, 231, 128);
+    color: rgb(231, 166, 25);
     text-align: center;
     z-index: 999;
 }
@@ -173,9 +173,22 @@ footer {
     align-items: center;
 }
 
-.league {
+.highlight {
     color: rgb(255, 51, 0);
     font-size: 18px;
+    font-weight: bold
+}
+
+.marker1 {
+    background: linear-gradient(transparent 60%, #a9eaf2 0%);
+}
+
+.marker2 {
+    background: linear-gradient(transparent 60%, #ffcedb 0%);
+}
+
+.strong {
+    font-weight: 500;
 }
 
 .page-top {
