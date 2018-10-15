@@ -167,11 +167,13 @@ footer {
 }
 
 .marker1 {
-    background: linear-gradient(transparent 60%, #a9eaf2 0%);
+    background: linear-gradient(transparent 60%, #f1f2a9 0%);
+    font-weight: bold
 }
 
 .marker2 {
-    background: linear-gradient(transparent 60%, #ffcedb 0%);
+    background: linear-gradient(transparent 60%, #fcd19a 0%);
+    font-weight: bold
 }
 
 .page-top {
