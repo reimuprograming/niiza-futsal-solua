@@ -102,15 +102,16 @@ article header::before {
     background-image: url(img/41929.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     filter: blur(1.5px);
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     color: var(--main-color);
+    z-index: auto;
     text-align: center;
-    z-index: 999;
+    vertical-align: top
 }
 
 h2 {
