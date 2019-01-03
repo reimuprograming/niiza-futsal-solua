@@ -209,3 +209,7 @@ footer {
         padding: 0 1em;
     }
 }
+
+iframe.cameo {
+    margin-top: 20px
+}
